@@ -5,81 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience - Hemant Kakde</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-   <header>
-        <nav>
-              <div class="logo">Hemant Kakde</div>
-             <ul class="nav-links">
-               <li><a href="index.html">Home</a></li>
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="logo">HK.</div>
+            <ul class="nav-links" id="main-nav-links">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="experience.html">Experience</a></li>
+                <li><a href="experience.html" class="active-nav">Experience</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
-    <section class="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Power BI Developer</h3>
-                <p class="company-name">Capgemini Engineering India, Pune, Maharashtra | Aug 2021 – Oct 2023</p>
-                 <ul class="experience-list">
-                   <li> Transformed complex datasets into strategic insights using SQL, Python, Excel, and Power BI
-                    </li>
-                     <li> Built and automated interactive Power BI dashboards for key business metrics.
-                   </li>
-                  <li>Ensured data accuracy, completeness, and consistency through cleaning and preprocessing procedures.
-                  </li>
-                 <li>Delivered clear, actionable reports to senior stakeholders.
-                  </li>
-                   <li> Enabled real-time monitoring of KPIs for better performance tracking.
-                    </li>
-                      <li>Collaborated cross-functionally to deliver data solutions.
-                     </li>
-                      <li> Enabled real-time monitoring of KPIs for better performance tracking.
-                      </li>
-                     <li>Collaborated cross-functionally to deliver data solutions.
-                     </li>
-                    <li> Generated executive-ready reports in Excel and Power BI
-                   </li>
-                 </ul>
-                  <h3>Power BI Developer</h3>
-                <p class="company-name">RED SWITCH | MAY 2025 – Present Freelancing</p>
-                 <ul class="experience-list">
-                   <li>Delivered Power BI dashboards across pharma, real estate, sustainability, retail, and sales domains
-                    </li>
-                     <li>Built optimized data models and DAX measures.
-                   </li>
-                  <li> Translated raw data into actionable insights for strategy teams
-                  </li>
-                 <li>Delivered clear, actionable reports to senior stakeholders.
-                  </li>
-                 </ul>
-                   <h3>Power BI Developer/Looker Studio</h3>
-                <p class="company-name">Klothewala – Present Freelancing </p>
-                 <ul class="experience-list">
-                   <li>Provided data analytics consultation to optimize retail operations and reporting efficiency.
-                    </li>
-                     <li>Designed and implemented three Looker Studio dashboards for Operations, Orders, Finance, and Production.
-                   </li>
-                  <li>  Automated reporting workflows and centralized data from Excel and Google Sheets to improve accuracy and speed.
-                  </li>
-                 <li>Delivered actionable insights that improved cross-department visibility and decision-making.
-                  </li>
-                      <li>Advised stakeholders on key performance indicators (KPIs) and recommended data-driven strategies.
-                  </li>
-                 </ul>
+
+    <main class="content-wrapper">
+        <section class="page-section">
+            <div class="section-header">
+                <h1>Career Experience</h1>
+                <p>A summary of my professional journey and key accomplishments.</p>
             </div>
+
+            <div class="experience-container">
+                <!-- Experience Item 1 -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="company-name">RED SWITCH</h3>
+                        <h4 class="job-title">Power BI Developer (Freelance)</h4>
+                        <p class="job-date">MAY 2025 – Present</p>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Delivered bespoke Power BI dashboards across diverse domains including pharma, real estate, sustainability, retail, and sales.</li>
+                        <li>Engineered optimized data models and complex DAX measures to translate raw data into actionable insights for strategy teams.</li>
+                        <li>Consistently provided clear, actionable reports and visualizations to senior stakeholders to support decision-making.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="company-name">Klothewala</h3>
+                        <h4 class="job-title">Power BI Developer / Looker Studio (Freelance)</h4>
+                        <p class="job-date">Present</p>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Provided data analytics consultation to optimize retail operations and dramatically improve reporting efficiency.</li>
+                        <li>Designed and implemented three critical Looker Studio dashboards for Operations, Finance, and Production.</li>
+                        <li>Automated reporting workflows, centralizing data from Excel and Google Sheets to improve accuracy and speed.</li>
+                        <li>Advised stakeholders on key performance indicators (KPIs) and recommended data-driven strategies for growth.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="company-name">Capgemini Engineering India, Pune</h3>
+                        <h4 class="job-title">Power BI Developer</h4>
+                        <p class="job-date">Aug 2021 – Oct 2023</p>
+                    </div>
+                    <ul class="experience-list">
+                       <li>Transformed complex datasets into strategic assets using SQL, Python, Excel, and Power BI.</li>
+                       <li>Built and automated interactive Power BI dashboards for monitoring key business metrics, enabling real-time performance tracking.</li>
+                       <li>Ensured data accuracy and consistency through rigorous data cleaning and preprocessing procedures.</li>
+                       <li>Collaborated cross-functionally to deliver end-to-end data solutions and generated executive-ready reports.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                 <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="contact.html" aria-label="Contact Me"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>© 2025 Hemant Kakde. Designed with precision.</p>
         </div>
-    </section>
-      <footer>
-        <p>© 2024 Hemant Kakde</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
