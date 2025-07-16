@@ -268,8 +268,23 @@ body {
 }
 
 /* ---
-   7. About Page Styles
+   7. About Page Styles - IMAGE SIZE CORRECTED
 --- */
+.about-profile-image {
+    display: block;
+    margin: 0 auto 4rem auto;
+    width: 150px;  /* Corrected size */
+    height: 150px; /* Corrected size */
+}
+
+.about-profile-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--shadow);
+}
+
 .about-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -280,34 +295,42 @@ body {
 .about-text h2 {
     font-size: 1.75rem;
     margin-top: 0;
+    margin-bottom: 1.5rem;
 }
 
 .about-text p {
     margin-bottom: 1.5rem;
+    color: var(--text-light);
 }
 
 .about-skills h2 {
     font-size: 1.75rem;
     margin-top: 0;
+    margin-bottom: 1.5rem;
 }
 
-.about-skills ul {
+.skills-list {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.about-skills li {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 1rem;
-    font-weight: 500;
 }
 
-.about-skills .fa-check-circle {
+.skills-list li {
+    background-color: #e9f2ff;
     color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
+
+.skills-list li i {
+    margin-right: 8px;
+}
+
 
 /* ---
    8. Experience Page Styles
@@ -553,7 +576,7 @@ body {
 
 
 /* ---
-   12. Project Detail Page Styles - CORRECTED & FINAL
+   12. Project Detail Page Styles
 --- */
 .project-detail-header {
     text-align: center;
@@ -568,7 +591,7 @@ body {
 }
 
 .project-detail-content {
-    max-width: 1000px; /* Wider container for image grids */
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -592,15 +615,14 @@ body {
     gap: 10px;
 }
 
-/* This is the corrected gallery style */
 .project-image-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Creates a responsive 2-column grid */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
 }
 
 .project-image-gallery h2 {
-    grid-column: 1 / -1; /* Makes the heading span the full width */
+    grid-column: 1 / -1;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 0;
@@ -671,7 +693,6 @@ body {
         padding: 2rem;
     }
 
-    /* Make the project image gallery single-column on smaller screens */
     .project-image-gallery {
         grid-template-columns: 1fr;
     }
